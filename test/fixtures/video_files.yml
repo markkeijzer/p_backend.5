@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  review_id: 
+  scene_id: 
+  file_path: MyString
+
+two:
+  review_id: 
+  scene_id: 
+  file_path: MyString
