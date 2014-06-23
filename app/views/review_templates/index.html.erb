@@ -1,0 +1,31 @@
+<h1>Listing review_templates</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Product</th>
+      <th>Custom scenes allowed</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @review_templates.each do |review_template| %>
+      <tr>
+        <td><%= review_template.title %></td>
+        <td><%= review_template.product %></td>
+        <td><%= review_template.custom_scenes_allowed %></td>
+        <td><%= link_to 'Show', review_template %></td>
+        <td><%= link_to 'Edit', edit_review_template_path(review_template) %></td>
+        <td><%= link_to 'Destroy', review_template, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Review template', new_review_template_path %>

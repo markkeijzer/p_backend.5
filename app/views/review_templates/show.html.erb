@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @review_template.title %>
+</p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @review_template.product %>
+</p>
+
+<p>
+  <strong>Custom scenes allowed:</strong>
+  <%= @review_template.custom_scenes_allowed %>
+</p>
+
+<%= link_to 'Edit', edit_review_template_path(@review_template) %> |
+<%= link_to 'Back', review_templates_path %>

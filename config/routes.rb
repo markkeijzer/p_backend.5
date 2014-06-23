@@ -1,4 +1,6 @@
 PBackend::Application.routes.draw do
+  resources :review_templates
+
   resources :products
 
   resources :brands
