@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  voucher_code: MyString
+  times_usable: 1
+
+two:
+  voucher_code: MyString
+  times_usable: 1
