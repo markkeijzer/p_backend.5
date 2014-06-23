@@ -1,4 +1,5 @@
 ActiveAdmin.register Voucher do
+  permit_params :voucher_code, :times_usable
 
   
   # See permitted parameters documentation:
