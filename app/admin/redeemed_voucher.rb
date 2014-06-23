@@ -1,4 +1,5 @@
 ActiveAdmin.register RedeemedVoucher do
+  permit_params 
 
   
   # See permitted parameters documentation:
