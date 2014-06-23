@@ -1,4 +1,5 @@
 ActiveAdmin.register SceneTemplate do
+  permit_params :name, :description, :sort_order, :max_length, :required, :image_url
 
   
   # See permitted parameters documentation:
