@@ -1,4 +1,5 @@
 ActiveAdmin.register Brand do
+  permit_params :name, :image_url
 
   
   # See permitted parameters documentation:
