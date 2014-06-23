@@ -1,4 +1,5 @@
 ActiveAdmin.register VideoFile do
+  permit_params :file_path
 
   
   # See permitted parameters documentation:
