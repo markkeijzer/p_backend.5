@@ -1,4 +1,6 @@
 PBackend::Application.routes.draw do
+  resources :scene_templates
+
   resources :redeemed_vouchers
 
   resources :vouchers

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Review template:</strong>
+  <%= @scene_template.review_template %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @scene_template.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @scene_template.description %>
+</p>
+
+<p>
+  <strong>Sort order:</strong>
+  <%= @scene_template.sort_order %>
+</p>
+
+<p>
+  <strong>Max length:</strong>
+  <%= @scene_template.max_length %>
+</p>
+
+<p>
+  <strong>Required:</strong>
+  <%= @scene_template.required %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @scene_template.image_url %>
+</p>
+
+<%= link_to 'Edit', edit_scene_template_path(@scene_template) %> |
+<%= link_to 'Back', scene_templates_path %>

@@ -1,0 +1,2 @@
+module SceneTemplatesHelper
+end

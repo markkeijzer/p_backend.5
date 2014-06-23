@@ -1,0 +1,39 @@
+<h1>Listing scene_templates</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Review template</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Sort order</th>
+      <th>Max length</th>
+      <th>Required</th>
+      <th>Image url</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @scene_templates.each do |scene_template| %>
+      <tr>
+        <td><%= scene_template.review_template %></td>
+        <td><%= scene_template.name %></td>
+        <td><%= scene_template.description %></td>
+        <td><%= scene_template.sort_order %></td>
+        <td><%= scene_template.max_length %></td>
+        <td><%= scene_template.required %></td>
+        <td><%= scene_template.image_url %></td>
+        <td><%= link_to 'Show', scene_template %></td>
+        <td><%= link_to 'Edit', edit_scene_template_path(scene_template) %></td>
+        <td><%= link_to 'Destroy', scene_template, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Scene template', new_scene_template_path %>
