@@ -29,6 +29,7 @@ class RedeemedVouchersController < ApplicationController
   # POST /redeemed_vouchers.json
   def create
     @redeemed_voucher = RedeemedVoucher.new(redeemed_voucher_params)
+    @redeemed_voucher.user = current_user
 
     respond_to do |format|
       if @redeemed_voucher.save
