@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Voucher code:</strong>
+  <%= @voucher.voucher_code %>
+</p>
+
+<p>
+  <strong>Times usable:</strong>
+  <%= @voucher.times_usable %>
+</p>
+
+<%= link_to 'Edit', edit_voucher_path(@voucher) %> |
+<%= link_to 'Back', vouchers_path %>

@@ -1,4 +1,6 @@
 PBackend::Application.routes.draw do
+  resources :vouchers
+
   resources :reviews
 
   resources :video_files
