@@ -1,4 +1,6 @@
 PBackend::Application.routes.draw do
+  resources :redeemed_vouchers
+
   resources :vouchers
 
   resources :reviews
