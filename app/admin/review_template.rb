@@ -1,4 +1,5 @@
 ActiveAdmin.register ReviewTemplate do
+  permit_params :title, :custom_scenes_allowed
 
   
   # See permitted parameters documentation:
