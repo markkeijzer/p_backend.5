@@ -1,4 +1,5 @@
 ActiveAdmin.register Scene do
+  permit_params :sort_order, :max_length, :name, :description
 
   
   # See permitted parameters documentation:
