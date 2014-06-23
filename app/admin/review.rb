@@ -1,4 +1,5 @@
 ActiveAdmin.register Review do
+  permit_params 
 
   
   # See permitted parameters documentation:
