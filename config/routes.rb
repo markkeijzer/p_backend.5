@@ -1,4 +1,6 @@
 PBackend::Application.routes.draw do
+  resources :video_files
+
   resources :scenes
 
   resources :review_templates

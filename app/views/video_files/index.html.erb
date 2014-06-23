@@ -1,0 +1,31 @@
+<h1>Listing video_files</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Review</th>
+      <th>Scene</th>
+      <th>File path</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @video_files.each do |video_file| %>
+      <tr>
+        <td><%= video_file.review %></td>
+        <td><%= video_file.scene %></td>
+        <td><%= video_file.file_path %></td>
+        <td><%= link_to 'Show', video_file %></td>
+        <td><%= link_to 'Edit', edit_video_file_path(video_file) %></td>
+        <td><%= link_to 'Destroy', video_file, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Video file', new_video_file_path %>

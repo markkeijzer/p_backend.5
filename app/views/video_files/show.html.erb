@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Review:</strong>
+  <%= @video_file.review %>
+</p>
+
+<p>
+  <strong>Scene:</strong>
+  <%= @video_file.scene %>
+</p>
+
+<p>
+  <strong>File path:</strong>
+  <%= @video_file.file_path %>
+</p>
+
+<%= link_to 'Edit', edit_video_file_path(@video_file) %> |
+<%= link_to 'Back', video_files_path %>
